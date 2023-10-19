@@ -54,7 +54,7 @@
                 'Total'		=>$Total
             );
         }
-        $tabel = 'penjualan';
+        $tabel = 'Penjualan';
         $proses->edit_data($tabel,$data);
         echo '<script>alert("Edit Data Berhasil");window.location="../index.php"</script>';
     }
@@ -62,8 +62,8 @@
     // hapus data
     if(!empty($_GET['aksi'] == 'hapus'))
     {
-        $tabel = 'tbl_user';
-        $id = strip_tags($_GET['hapusid']);
+        $tabel = 'Penjualan';
+        $id = strip_tags($_GET['IdPenjualan']);
         $proses->hapus_data($tabel,$id);
         echo '<script>alert("Hapus Data Berhasil");window.location="../index.php"</script>';
     }
