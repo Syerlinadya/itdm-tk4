@@ -54,7 +54,11 @@
                 'Total'		=>$Total
             );
         }
+<<<<<<< HEAD
         $tabel = 'Penjualan';
+=======
+        $tabel = 'penjualan';
+>>>>>>> bd9047628169e10e88b28df49111423b013d8dbc
         $proses->edit_data($tabel,$data);
         echo '<script>alert("Edit Data Berhasil");window.location="../index.php"</script>';
     }
@@ -62,8 +66,13 @@
     // hapus data
     if(!empty($_GET['aksi'] == 'hapus'))
     {
+<<<<<<< HEAD
         $tabel = 'Penjualan';
         $id = strip_tags($_GET['IdPenjualan']);
+=======
+        $tabel = 'tbl_user';
+        $id = strip_tags($_GET['hapusid']);
+>>>>>>> bd9047628169e10e88b28df49111423b013d8dbc
         $proses->hapus_data($tabel,$id);
         echo '<script>alert("Hapus Data Berhasil");window.location="../index.php"</script>';
     }
